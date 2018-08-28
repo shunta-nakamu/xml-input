@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<persons name="friends">
+  <person name="Asakura">
+    <gender>Male</gender>
+    <age>20</age>
+    <interest>Game</interest>
+  </person>
+  <person name="Kikuchi">
+    <gender>Male</gender>
+    <age>23</age>
+    <interest>Tennis</interest>
+  </person>
+  <person name="Suzuki">
+    <gender>Female</gender>
+    <age>19</age>
+    <interest>Baseball</interest>
+  </person>
+</persons>

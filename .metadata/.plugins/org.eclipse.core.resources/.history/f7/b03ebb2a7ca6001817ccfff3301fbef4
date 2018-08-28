@@ -1,0 +1,5 @@
+package xml_input;
+
+public class XMLReader {
+
+}

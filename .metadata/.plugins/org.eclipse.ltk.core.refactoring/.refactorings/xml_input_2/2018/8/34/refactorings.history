@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;sample.xml&apos; to &apos;xml_input_2/xml&apos;&#x0A;- Original project: &apos;xml_input_2&apos;&#x0A;- Destination element: &apos;xml_input_2/xml&apos;&#x0A;- Original element: &apos;sample.xml&apos;&#x0A;- Update references to refactored element" description="Move file" destination="/xml" element1="src/xml_input_2/sample.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1535000988891" units="0" version="1.0"/>
+</session>

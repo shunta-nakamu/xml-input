@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="euc_jp" ?>
+<root>
+    <text>Hello SAX!!!</text>
+    <text>Hello SAX2!!!</text>
+    <text>Hello SAX3!!!</text>
+    <text>Hello SAX4!!!</text>
+    <text>Hello SAX5!!!</text>
+    <text>Hello SAX6!!!
+    	<text>hello</text>
+    </text>
+</root>

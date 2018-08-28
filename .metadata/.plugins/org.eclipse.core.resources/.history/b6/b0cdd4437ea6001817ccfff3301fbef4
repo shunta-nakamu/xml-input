@@ -1,0 +1,45 @@
+package xml_input;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class XMLReader {
+    public static void main(String[] args) throws Exception {
+        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse("xml/persons.xml");
+        
+        Element root = document.getDocumentElement();
+        
+        System.out.println("Node: " + root.getNodeName());
+        System.out.println("name: " + root.getAttribute("name"));
+        
+        System.out.println("==============================");
+        
+        NodeList personsNodeList = root.getChildNodes();
+        System.out.println("personsNodeList=" + personsNodeList.getLength());
+        for(int i = 0; i < personsNodeList.getLength(); i++) {
+            Node personNode = personsNodeList.item(i);
+            System.out.println("personNode=" +personNode);
+            if(personNode.getNodeType() == Node.ELEMENT_NODE) {
+                Element personElement = (Element)personNode;
+                if(personElement.getNodeName().equals("person")) {
+                    System.out.println("[" + personElement.getAttribute("name") + "]");
+                    NodeList personChildrenNodeList = personElement.getChildNodes();
+                    for(int j = 0; j < personChildrenNodeList.getLength(); j++) {
+                        Node node = personChildrenNodeList.item(j);
+                        if(node.getNodeType() == Node.ELEMENT_NODE) {
+                            System.out.println(node.getNodeName() + ": " + node.getTextContent());
+                        }
+                    }
+                }
+            }
+        }
+        
+        System.out.println("==============================");
+    }
+}

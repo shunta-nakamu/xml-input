@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+/Users/Shunta/Desktop/Xml_input/.metadata/.plugins/org.eclipse.jdt.core
+4069375477.index
+1748380320.index
